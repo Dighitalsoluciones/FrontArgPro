@@ -1,0 +1,112 @@
+#ref-yo-programo{
+    color: red;
+    font-size: 25px;
+    font-family: Impact;
+
+    
+}
+
+.card-format{
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding: 20px;
+    border-color: blue;
+}
+
+#ubicacion{
+    margin-left: 0px;
+}
+
+.espaciado-botones{
+    margin: 1px;
+    display: block;
+   
+}
+
+#fotoperfil{
+    border-radius: 50%;  
+    width: 15%; 
+    height: 10%;
+    position: sticky;
+    margin-top: -10%;
+    z-index: 1;
+    margin-left: -15px;
+    
+    }
+    
+.fondo-tarjeta{
+    background-image: url("https://snipboard.io/jzd2Om.jpg");
+    border-radius: 32px;
+}
+.card-text{
+    color:whitesmoke;
+    margin-left: 20px;
+}
+
+#bajo-foto{
+    color: black;
+}
+
+#editar-acercade{
+    font-size: 1.1em;
+    background-color: #ddd;
+    border: 3px solid #9fc;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    box-shadow: 0 0 20px #4f9;
+
+}
+
+.logo-miniatura{
+    float: left;
+    height: 40px;
+    width: 40px;
+    margin-top: -10px;
+   
+}
+
+.format-experiencias{
+    margin: 0px 50px;
+}
+
+h6.format-experiencias{
+    margin-top: 10px;
+    font-family: Impact;
+}
+
+p.format-experiencias{
+    color:darkcyan;
+}
+
+.lista-exp{
+    margin-top: 20px;
+}
+
+.brillo{
+    margin-left: 15px;
+    position:relative;
+    display: block;
+    font-size:30px;
+    height: 50px;
+    width: 200px;  
+    text-decoration:none;
+    color:#333;
+    overflow:hidden;
+}
+.brillo span{
+    position:relative;
+    display: block;
+    background:url(brillo.png) no-repeat;  
+    background-position: -100px 0px;
+    margin-top:-75px;
+    height: 70px;
+    width: 200px;
+}
+.brillo:hover span{
+    background-position: 300px 0px;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1s;
+    transition-property: all;
+    transition-duration: 1s;
+}
