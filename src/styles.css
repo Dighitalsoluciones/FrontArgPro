@@ -2,6 +2,7 @@
     color: red;
     font-size: 25px;
     font-family: Impact;
+    align-items: center;
 }
 
 .card-format{
@@ -33,11 +34,12 @@
     position: sticky;
     margin-top: -8%;
     z-index: 1;
+    left: 3%;
         
     }
     
 .fondo-tarjeta{
-    background-image: url("https://snipboard.io/jzd2Om.jpg");
+    background-image: url("https://res.cloudinary.com/dighitalsoluciones/image/upload/v1661261058/IMG%20PROYECTO%20INTEGRADOR/portadainicial1_omalrb.jpg");
     border-radius: 32px;
 }
 .card-text{
@@ -110,4 +112,53 @@ p.format-experiencias{
     -webkit-transition-duration: 1s;
     transition-property: all;
     transition-duration: 1s;
+}
+
+footer{
+    color:azure;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 2px -2px;
+    font-size: 15px;
+    
+
+}
+
+footer p{
+    margin-top: 6px;
+    color: #ffa;
+    text-shadow: 0 0 30px #fff;
+}
+
+.piedepagina{
+    background-color:black;
+}
+
+/*--- Vista Dispositivos moviles ---*/
+@media (max-width: 575px){
+    #ref-yo-programo{
+        align-items: flex-end;
+    }
+    #fotoperfil{
+        border-radius: 50%;  
+        width: 15%; 
+        height: 15%;
+        position: absolute;
+        margin-top: -30px;
+        z-index: 1;
+        left: 5%;
+    }
+    #encabezado h5{
+        display: flex;
+        justify-content: center;
+    }
+    #bajo-foto{
+        display: flex;
+        justify-content: center;
+    }
+    #ubicacion{
+        display: flex;
+        justify-content: center;
+    }
 }
