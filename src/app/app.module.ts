@@ -11,6 +11,7 @@ import { ExperienciasComponent } from './componentes/experiencias/experiencias.c
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { PiedepaginaComponent } from './componentes/piedepagina/piedepagina.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,8 @@ import { PiedepaginaComponent } from './componentes/piedepagina/piedepagina.comp
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
+    
     
     
   ],
