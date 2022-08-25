@@ -35,8 +35,13 @@
     margin-top: -8%;
     z-index: 1;
     left: 3%;
-        
+            
     }
+
+#bteditarfoto{
+    position: absolute;
+    left: 15%;
+}    
     
 .fondo-tarjeta{
     background-image: url("https://res.cloudinary.com/dighitalsoluciones/image/upload/v1661261058/IMG%20PROYECTO%20INTEGRADOR/portadainicial1_omalrb.jpg");
@@ -142,12 +147,12 @@ footer p{
     }
     #fotoperfil{
         border-radius: 50%;  
-        width: 15%; 
-        height: 15%;
-        position: absolute;
-        margin-top: -30px;
+        width: 30%; 
+        height: 30%;
+        position: sticky;
         z-index: 1;
-        left: 5%;
+        margin-left: 33%;
+        
     }
     #encabezado h5{
         display: flex;
