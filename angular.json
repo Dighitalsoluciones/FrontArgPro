@@ -105,5 +105,8 @@
       }
     }
   },
-  "defaultProject": "FrontEndArg"
+  "defaultProject": "FrontEndArg",
+  "cli": {
+    "analytics": false
+  }
 }
