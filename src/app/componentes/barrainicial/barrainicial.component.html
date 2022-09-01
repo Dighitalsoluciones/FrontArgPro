@@ -12,7 +12,8 @@
            <div class="espaciado-botones">
              <a href="https://facebook.com/profile.php?ide=100008418706375" class="btn btn-outline-dark my-2 my-sm-0 espaciado-btn-redes" type="submit" style="background-color: blue;"><i class="fab fa-facebook-square"></i></a>
              <a href="https://instagram.com/hernyglomba" class="btn btn-outline-dark my-2 my-sm-0 espaciado-btn-redes" href="https://instagram.com/hernyglomba"type="submit" style="background-color: #ac2bac;"><i class="fab fa-instagram"></i></a>
-             <button class="btn btn-outline-success my-2 my-sm-0" (click)="login()" type="submit">Login</button>
+             <button type="button" class="btn btn-outline-success my-2 my-sm-0" (click)="login()" *ngIf="!isLogged" >LOGIN</button>
+             <button type="button" class="btn btn-outline-success my-2 my-sm-0" (click)="onLogout()" *ngIf="isLogged">LOGOUT</button>
            </div>     
          </div>
     </div>
