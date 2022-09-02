@@ -1,0 +1,19 @@
+<img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659454739/IMG%20PROYECTO%20INTEGRADOR/logodeveloper_lqwodl.png"> 
+              <h6 class="format-experiencias">Full Stack Jr. Developer</h6>
+              <p class="format-experiencias">Independiente</p>
+              <p class="format-experiencias">Marzo 2020 - Actualidad</p>
+              <p class="format-experiencias">Buenos Aires, Argentina</p>
+            </li>
+            <li>
+              <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659711140/IMG%20PROYECTO%20INTEGRADOR/logoglide_chmedf.jpg"> 
+              <h6 class="format-experiencias">Desarrollador de Aplicaciones Low-Code</h6>
+              <p class="format-experiencias">Plataforma Glide</p>
+              <p class="format-experiencias">Marzo 2020 - Actualidad</p>
+              <p class="format-experiencias">Buenos Aires, Argentina</p>
+            </li>
+            <li>
+              <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659712020/IMG%20PROYECTO%20INTEGRADOR/LOGO_TIRRENO_NUEVO_mbiff6.png"> 
+              <h6 class="format-experiencias">Diseñador de Packaging y Aplicaciones Internas</h6>
+              <p class="format-experiencias">Helados Tirreno</p>
+              <p class="format-experiencias">Agosto 2009 - Actualidad</p>
+              <p class="format-experiencias">La porteña 1341, Llavallol, Buenos Aires, Argentina</p>
