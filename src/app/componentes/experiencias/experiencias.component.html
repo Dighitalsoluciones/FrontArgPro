@@ -2,15 +2,22 @@
     <div class="col-md-12 container-fluid">
       <div class="card mb-3" style="border-radius: 32px; background-color: darkseagreen;">  
         <div class="card-body">
-          <a href="#" class="brillo">Experiencias<span></span></a>
+          <a href="#" class="brillo">Experiencias<span></span> </a>
+          <button class="btn btn-outline-dark rounded" style="margin: 10px 5px 18px 15px;" routerLink="/nuevaexp" *ngIf="isLogged" title="Agregar Experiencia"><i class="fas fa-plus"></i>
+          </button>
           
-          <div>
-            
-            <table class="table">
-              <tbody>
-                <tr></tr>
-              </tbody>
-            </table>
 
+          <div *ngFor="let Experiencia of expe">
+            <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659454739/IMG%20PROYECTO%20INTEGRADOR/logodeveloper_lqwodl.png"> 
+              <h6 class="format-experiencias">{{Experiencia.nombreExp}} 
+                <button class="btn btn-outline-dark rounded float-end espaciado-botones" *ngIf="isLogged" routerLink="/editexp/{{Experiencia.id}}" title="Editar">
+                  <i class="far fa-edit"></i></button>
+                <button class="btn btn-outline-dark rounded float-end espaciado-botones" *ngIf="isLogged" title="Eliminar">
+                  <i class="fas fa-trash-alt"></i></button>
+              </h6>
+              <p class="format-experiencias">{{Experiencia.descripcionExp}}</p>
+              <p class="format-experiencias">Marzo 2020 - Actualidad</p>
+              <p class="format-experiencias">Buenos Aires, Argentina</p>
+                            
           </div>
            
