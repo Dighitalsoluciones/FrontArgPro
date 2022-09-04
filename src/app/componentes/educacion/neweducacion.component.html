@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="logo"> Logo de la institucion</label>
+                    <input type="text" class="form-control" id="logo" name="logo" [(ngModel)]="logo" required>
+                </div>
+                <div class="form-group">
+                    <label for="titulo"> Titulo Obtenido</label>
+                    <input type="text" class="form-control" id="titulo" name="titulo" [(ngModel)]="titulo" required>
+                </div>
+                <div class="form-group">
+                    <label for="centroeduc"> Nombre de la institucion</label>
+                    <input type="text" class="form-control" id="centroeduc" name="centroeduc" [(ngModel)]="centroeduc" required>
+                </div>
+                <div class="form-group" id="impHasta">
+                <label for="desde">Fecha de inicio:</label>
+                <input type="month" id="desde" name="desde" value=""
+                 min="01-2000" max="12-2025" [(ngModel)]="desde" required>
+                </div>
+                <div class="form-group" id="impHasta">
+                    <label for="desde">Fecha de finalización:</label>
+                    <input type="month" id="hasta" name="hasta" value=""
+                     min="01-2000" max="12-2025" [(ngModel)]="hasta" required>
+                 </div>
+                
+                <div class="form-group" id="impHasta">
+                    <label for="ubicacion"> Lugar de la institucion</label>
+                    <input type="text" class="form-control" id="ubicacion" name="ubicacion" [(ngModel)]="ubicacion" required>
+                </div>
+                <button class="btn btn-success" id="botonAgregar">
+                    AGREGAR EDUCACION
+                </button>
+                <button class="btn btn-danger" id="botonAgregar" routerLink="''">
+                    CANCELAR
+                </button>
+                
+            </form>
+        </div>
+    </div>
+</div>
