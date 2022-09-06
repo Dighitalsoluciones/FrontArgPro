@@ -8,7 +8,7 @@
           
 
           <div *ngFor="let Experiencia of expe">
-            <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659454739/IMG%20PROYECTO%20INTEGRADOR/logodeveloper_lqwodl.png"> 
+            <img class="logo-miniatura" [src]="[Experiencia.logoExp]"> 
               <h6 class="format-experiencias">{{Experiencia.nombreExp}} 
                   <button class="btn btn-outline-dark rounded float-end espaciado-botones" (click)="delete(Experiencia.id)" *ngIf="isLogged" title="Eliminar">
                   <i class="fas fa-trash-alt"></i></button>
@@ -16,8 +16,8 @@
                     <i class="far fa-edit"></i></button>
               </h6>
               <p class="format-experiencias">{{Experiencia.descripcionExp}}</p>
-              <p class="format-experiencias">Marzo 2020 - Actualidad</p>
-              <p class="format-experiencias">Buenos Aires, Argentina</p>
+              <p class="format-experiencias">{{Experiencia.desdeExp}}</p>
+              <p class="format-experiencias">{{Experiencia.hastaExp}}</p>
                             
           </div>
            
