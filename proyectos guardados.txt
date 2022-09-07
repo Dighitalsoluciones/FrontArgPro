@@ -1,0 +1,19 @@
+  <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659712020/IMG%20PROYECTO%20INTEGRADOR/LOGO_TIRRENO_NUEVO_mbiff6.png"> 
+              <h6 class="format-experiencias">App de pedidos Helados Tirreno</h6>
+              <p class="format-experiencias">Desarrollo con la plataforma Glide (LowCode) por el cual un cliente puede realizar un pedido en simples paso sin registro previo y el cual es enviado por Whatsapp, con todo el resumen de los datos para la entrega</p>
+              <p class="format-experiencias">Marzo 2020</p>
+              <p class="format-experiencias"><a href="https://heladostirreno.glideapp.io">Link a la app</a></p>
+            </li>
+            <li>
+              <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659721546/IMG%20PROYECTO%20INTEGRADOR/2_asjgvq.png"> 
+              <h6 class="format-experiencias">App de sistema de reservas para Fitness Club Cross Box</h6>
+              <p class="format-experiencias">Desarrollo con la plataforma Glide (LowCode) por el cual un cliente puede crear un perfil, realizar reservas de los turnos segun la actividad a desarrollar en el gimnacio, ver turnos tomados, ver clases pagas, etc.</p>
+              <p class="format-experiencias">Marzo 2020</p>
+              <p class="format-experiencias"><a href="https://crossbox.glideapp.io">Link a la app</a></p>
+            </li>
+            <li>
+              <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659712020/IMG%20PROYECTO%20INTEGRADOR/LOGO_TIRRENO_NUEVO_mbiff6.png"> 
+              <h6 class="format-experiencias">App de Diagnostico Covid-19 para ingreso a Establecimiento Helados Tirreno</h6>
+              <p class="format-experiencias">Desarrollo con la plataforma Glide (LowCode) por el cual un empleado todos los dias al ingresar al Establecimiento completaba un diagnostico sobre Covid-19, los mismos eran recepcionados por una app Terminal controlada por el empleador</p>
+              <p class="format-experiencias">Marzo 2020</p>
+              <p class="format-experiencias"><a href="https://tirrenotecuida.glideapp.io">Link a la app</a></p>
