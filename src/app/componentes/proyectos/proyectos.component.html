@@ -12,12 +12,12 @@
               <h6 class="format-experiencias">{{Proyectos.referenciaProyec}} 
                   <button class="btn btn-outline-dark rounded float-end espaciado-botones" (click)="delete(Proyectos.id)" *ngIf="isLogged" title="Eliminar">
                   <i class="fas fa-trash-alt"></i></button>
-                  <button class="btn btn-outline-dark rounded float-end espaciado-botones" *ngIf="isLogged" routerLink="/editedu/{{Proyectos.id}}" title="Editar">
+                  <button class="btn btn-outline-dark rounded float-end espaciado-botones" *ngIf="isLogged" routerLink="/editproyecto/{{Proyectos.id}}" title="Editar">
                     <i class="far fa-edit"></i></button>
               </h6>
               <p class="format-experiencias" id="descriProy">{{Proyectos.descripcionProyec}}</p>
               <p class="format-experiencias">Fecha de inicio del Proyecto: {{Proyectos.fechacreacionProyec}}</p>
-              <p class="format-experiencias">Link del proyecto: {{Proyectos.linkProyec}}</p>
+              <p class="format-experiencias"><a href={{Proyectos.linkProyec}}>Link al proyecto</a></p>
            
                             
           </div>

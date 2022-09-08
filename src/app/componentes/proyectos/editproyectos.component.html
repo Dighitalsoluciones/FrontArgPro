@@ -1,0 +1,37 @@
+<div class="container" *ngIf="proyectos">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="logoProyec"> Logo del proyecto</label>
+                    <input type="text" class="form-control" id="logoProyec" name="logoProyec" [(ngModel)]="proyectos.logoProyec" required>
+                </div>
+                <div class="form-group">
+                    <label for="referenciaProyec"> Nombre del Proyecto</label>
+                    <input type="text" class="form-control" id="referenciaProyec" name="referenciaProyec" [(ngModel)]="proyectos.referenciaProyec" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionProyec"> Descripcion del Proyecto</label>
+                    <input type="text" class="form-control" id="descripcionProyec" name="descripcionProyec" [(ngModel)]="proyectos.descripcionProyec" required>
+                </div>
+                <div class="form-group" id="impHasta">
+                <label for="fechacreacionProyec"> Fecha de creacion de Proyecto:</label>
+                <input type="month" id="fechacreacionProyec" name="fechacreacionProyec" value=""
+                 min="01-2020" max="12-2025" [(ngModel)]="proyectos.fechacreacionProyec" required>
+                </div>
+                                
+                <div class="form-group" id="impHasta">
+                    <label for="linkProyec"> Link del Proyecto</label>
+                    <input type="text" class="form-control" id="linkProyec" name="linkProyec" [(ngModel)]="proyectos.linkProyec" required>
+                </div>
+                <button class="btn btn-success" id="botonAgregar">
+                    MODIFICAR PROYECTO
+                </button>
+                <button class="btn btn-danger" id="botonAgregar" routerLink="''">
+                    CANCELAR
+                </button>
+                
+            </form>
+        </div>
+    </div>
+</div>

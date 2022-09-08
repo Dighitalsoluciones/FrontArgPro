@@ -1,10 +1,10 @@
 <div class="row card-format">
     <div class="col-md-12 container-fluid">
       <div class="card mb-3 fondo-tarjeta">  
-        <div class="card-body" style="border-radius: 32px;">
-          <a href="#" class="brillo">A cerca de<span></span></a>
-          <button class="btn btn-outline-light my-2 my-sm-0 rounded float-end" id="boton-ed-acercade" title="Editar"><i class="far fa-edit"></i></button> 
-           <p class="card-text" id="acercade">Desarrollador de sistemas de gestión empresarial, Scrum Master</p>
+        <div *ngFor="let Acercade of acercade" class="card-body" style="border-radius: 32px;">
+          <a href="#" class="brillo">Acerca de<span></span></a>
+          <button class="btn btn-outline-light my-2 my-sm-0 rounded float-end" id="boton-ed-acercade" routerLink="/editaracercade/{{Acercade.id}}" *ngIf="isLogged" title="Editar"><i class="far fa-edit"></i></button> 
+           <p class="card-text" id="acercade">{{Acercade.sobremi}}</p>
             <input id="editar-acercade" type="text" style="display: none">
         </div>
       </div>

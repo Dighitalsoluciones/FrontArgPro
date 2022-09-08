@@ -1,0 +1,20 @@
+<div class="container" *ngIf="acercade">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="sobremi"> Descripcion de caracteristicas personales</label>
+                    <input type="text" class="form-control" id="sobremi" name="sobremi" [(ngModel)]="acercade.sobremi" required>
+                </div>
+               
+                <button class="btn btn-success" id="botonAgregar">
+                    MODIFICAR DESCRIPCION
+                </button>
+                <button class="btn btn-danger" id="botonAgregar" routerLink="''">
+                    CANCELAR
+                </button>
+                
+            </form>
+        </div>
+    </div>
+</div>

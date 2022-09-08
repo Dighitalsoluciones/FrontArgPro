@@ -5,6 +5,7 @@ export class persona{
     ubicacion: string;
     img: string;
     fondo: string;
+    
 
     constructor(nombre: string, titulo: string, ubicacion: string, img: string, fondo: string){
         this.nombre = nombre;
@@ -12,5 +13,6 @@ export class persona{
         this.ubicacion = ubicacion
         this.img = img;
         this.fondo = fondo;
+        
     }
 }
