@@ -23,6 +23,7 @@ import { EditEducacionComponent } from './componentes/educacion/edit-educacion.c
 import { NewproyectosComponent } from './componentes/proyectos/newproyectos.component';
 import { EditAcercadeComponent } from './componentes/acerca-de/edit-acercade.component';
 import { EditproyectosComponent } from './componentes/proyectos/editproyectos.component';
+import { EditencabezadoComponent } from './componentes/encabezado/editencabezado.component';
 
 
 
@@ -46,6 +47,7 @@ import { EditproyectosComponent } from './componentes/proyectos/editproyectos.co
     NewproyectosComponent,
     EditAcercadeComponent,
     EditproyectosComponent,
+    EditencabezadoComponent,
    
     
   ],

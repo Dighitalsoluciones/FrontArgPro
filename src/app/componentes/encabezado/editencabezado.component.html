@@ -1,0 +1,24 @@
+<div class="container" *ngIf="persona">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="img"> Ingresar URL de imagen de perfil</label>
+                    <input type="text" class="form-control" id="img" name="img" [(ngModel)]="persona.img" required>
+                </div>
+                <div class="form-group">
+                    <label for="fondo"> Ingresar URL de imagen de portada</label>
+                    <input type="text" class="form-control" id="fondo" name="fondo" [(ngModel)]="persona.fondo" required>
+                </div>
+             
+                <button class="btn btn-warning" id="botonAgregar" >
+                    ACTUALIZAR IMAGENES
+                </button>
+                <button class="btn btn-danger" id="botonAgregar" routerLink="''">
+                    CANCELAR
+                </button>
+                
+            </form>
+        </div>
+    </div>
+</div>
