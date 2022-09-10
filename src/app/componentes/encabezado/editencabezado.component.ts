@@ -15,7 +15,7 @@ export class EditencabezadoComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.activatedRoute.snapshot.params['id'];
-    this.personaS.getPersona().subscribe(
+    this.personaS.details(id).subscribe(
       data =>{
         this.persona = data;
       }, err =>{

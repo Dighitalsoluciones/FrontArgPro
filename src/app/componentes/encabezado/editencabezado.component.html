@@ -3,16 +3,28 @@
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="img"> Ingresar URL de imagen de perfil</label>
+                    <label for="nombre"> Modicar Nombre de Usuario</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="titulo"> Modificar Profesion/Titulo</label>
+                    <input type="text" class="form-control" id="titulo" name="titulo" [(ngModel)]="persona.titulo" required>
+                </div>
+                <div class="form-group">
+                    <label for="ubicacion"> Modificar Direccion de donde vives</label>
+                    <input type="text" class="form-control" id="ubicacion" name="ubicacion" [(ngModel)]="persona.ubicacion" required>
+                </div>
+                <div class="form-group">
+                    <label for="img"> Modificar URL de imagen de perfil</label>
                     <input type="text" class="form-control" id="img" name="img" [(ngModel)]="persona.img" required>
                 </div>
                 <div class="form-group">
-                    <label for="fondo"> Ingresar URL de imagen de portada</label>
+                    <label for="fondo"> Modificar URL de imagen de portada</label>
                     <input type="text" class="form-control" id="fondo" name="fondo" [(ngModel)]="persona.fondo" required>
                 </div>
              
                 <button class="btn btn-warning" id="botonAgregar" >
-                    ACTUALIZAR IMAGENES
+                    ACTUALIZAR PERFIL
                 </button>
                 <button class="btn btn-danger" id="botonAgregar" routerLink="''">
                     CANCELAR
