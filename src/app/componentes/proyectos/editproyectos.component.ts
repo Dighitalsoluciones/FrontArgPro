@@ -36,4 +36,9 @@ export class EditproyectosComponent implements OnInit {
     )
   }
 
+  cancelar(): void {
+    this.router.navigate(['']);
+  }
+
+
 }

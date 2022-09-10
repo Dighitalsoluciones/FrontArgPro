@@ -33,4 +33,9 @@ export class NewproyectosComponent implements OnInit {
   )
  }
 
+ cancelar(): void {
+  this.router.navigate(['']);
+}
+
+
 }

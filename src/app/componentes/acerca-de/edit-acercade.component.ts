@@ -23,6 +23,8 @@ export class EditAcercadeComponent implements OnInit {
         this.router.navigate(['']);
       }
     )
+
+    
   }
 
   onUpdate(): void{
@@ -35,6 +37,9 @@ export class EditAcercadeComponent implements OnInit {
       }
     )
   }
+  cancelar(): void {
+      this.router.navigate(['']);
+    }
 }
 
 

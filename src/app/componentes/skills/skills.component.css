@@ -1,0 +1,10 @@
+.graficos{
+    display: flex;
+}
+
+#grafico{
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    margin: auto;
+}

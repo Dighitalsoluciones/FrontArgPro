@@ -35,5 +35,8 @@ export class EditencabezadoComponent implements OnInit {
       }
     )
   }
+  cancelar(): void {
+    this.router.navigate(['']);
+  }
 
 }

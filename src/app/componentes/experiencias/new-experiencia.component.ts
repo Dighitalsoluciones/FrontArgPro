@@ -32,4 +32,8 @@ export class NewExperienciaComponent implements OnInit {
     )
   }
 
+  cancelar(): void {
+    this.router.navigate(['']);
+  }
+
 }

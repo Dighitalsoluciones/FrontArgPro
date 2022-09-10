@@ -35,5 +35,8 @@ export class EditEducacionComponent implements OnInit {
       }
     )
   }
+  cancelar(): void {
+    this.router.navigate(['']);
+  }
 
 }

@@ -36,7 +36,11 @@ export class EditExperienciaComponent implements OnInit {
           this.router.navigate(['']);
         }
       )
+      
     }
   
+    cancelar(): void {
+      this.router.navigate(['']);
+    }
 
 }
