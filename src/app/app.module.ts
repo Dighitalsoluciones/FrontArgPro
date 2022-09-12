@@ -24,6 +24,8 @@ import { NewproyectosComponent } from './componentes/proyectos/newproyectos.comp
 import { EditAcercadeComponent } from './componentes/acerca-de/edit-acercade.component';
 import { EditproyectosComponent } from './componentes/proyectos/editproyectos.component';
 import { EditencabezadoComponent } from './componentes/encabezado/editencabezado.component';
+import { EditskillsComponent } from './componentes/skills/editskills.component';
+import { EditskillsbComponent } from './componentes/skills/editskillsb.component';
 
 
 
@@ -48,6 +50,8 @@ import { EditencabezadoComponent } from './componentes/encabezado/editencabezado
     EditAcercadeComponent,
     EditproyectosComponent,
     EditencabezadoComponent,
+    EditskillsComponent,
+    EditskillsbComponent,
    
     
   ],

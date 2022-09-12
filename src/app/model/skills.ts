@@ -20,6 +20,7 @@ export class Skills {
     valorherrE: string;
     herramientaF: string;
     valorherrF: string;
+  
 
     constructor(aptitudA: string, valorA: string, aptitudB: string, valorB: string, aptitudC: string, valorC: string, aptitudD: string,
          valorD: string, herramientaA: string, valorherrA: string, herramientaB: string, valorherrB: string, herramientaC: string, valorherrC: string,

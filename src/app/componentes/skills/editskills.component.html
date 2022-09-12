@@ -1,0 +1,49 @@
+<div class="container" *ngIf="skills">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <h3> Modificar los datos del grafico de Cualidades </h3>
+                <div class="form-group">
+                    <label for="aptitudA"> Nombre de la aptitud A</label>
+                    <input type="text" class="form-control" id="aptitudA" name="aptitudA" [(ngModel)]="skills.aptitudA" required>
+                </div>
+                <div class="form-group">
+                    <label for="valorA"> Valor para la aptitud A</label>
+                    <input type="text" class="form-control" id="valorA" name="valorA" [(ngModel)]="skills.valorA" required>
+                </div>
+                <div class="form-group">
+                    <label for="aptitudB"> Nombre de la aptitud B</label>
+                    <input type="text" class="form-control" id="aptitudA" name="aptitudB" [(ngModel)]="skills.aptitudB" required>
+                </div>
+                <div class="form-group">
+                    <label for="valorB"> Valor para la aptitud B</label>
+                    <input type="text" class="form-control" id="valorB" name="valorB" [(ngModel)]="skills.valorB" required>
+                </div>
+                <div class="form-group">
+                    <label for="aptitudC"> Nombre de la aptitud C</label>
+                    <input type="text" class="form-control" id="aptitudC" name="aptitudC" [(ngModel)]="skills.aptitudC" required>
+                </div>
+                <div class="form-group">
+                    <label for="valorC"> Valor para la aptitud C</label>
+                    <input type="text" class="form-control" id="valorC" name="valorC" [(ngModel)]="skills.valorC" required>
+                </div>
+                <div class="form-group">
+                    <label for="aptitudD"> Nombre de la aptitud D</label>
+                    <input type="text" class="form-control" id="aptitudD" name="aptitudD" [(ngModel)]="skills.aptitudD" required>
+                </div>
+                <div class="form-group">
+                    <label for="valorD"> Valor para la aptitud D</label>
+                    <input type="text" class="form-control" id="valorD" name="valorD" [(ngModel)]="skills.valorD" required>
+                </div>
+           
+                <button class="btn btn-success" id="botonAgregar">
+                    MODIFICAR GRAFICO
+                </button>
+                <button class="btn btn-danger" id="botonAgregar" (click)="cancelar()">
+                    CANCELAR
+                </button>
+                
+            </form>
+        </div>
+    </div>
+</div>

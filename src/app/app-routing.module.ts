@@ -10,6 +10,8 @@ import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { EditproyectosComponent } from './componentes/proyectos/editproyectos.component';
 import { NewproyectosComponent } from './componentes/proyectos/newproyectos.component';
+import { EditskillsComponent } from './componentes/skills/editskills.component';
+import { EditskillsbComponent } from './componentes/skills/editskillsb.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -21,7 +23,9 @@ const routes: Routes = [
   {path: 'nuevoproyecto', component: NewproyectosComponent},
   {path: 'editaracercade/:id', component: EditAcercadeComponent},
   {path: 'editproyecto/:id', component: EditproyectosComponent},
-  {path: 'editpersona/:id', component: EditencabezadoComponent}
+  {path: 'editpersona/:id', component: EditencabezadoComponent},
+  {path: 'editskills/:id', component: EditskillsComponent},
+  {path: 'editskillsb/:id', component: EditskillsbComponent}
 ];
 
 @NgModule({

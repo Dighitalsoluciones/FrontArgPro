@@ -1,0 +1,66 @@
+<div class="container" *ngIf="skills">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+               
+                <h3> Modificar los datos del grafico de Herramientas </h3>
+                <div class="form-group">
+                    <label for="herramientaA"> Nombre de la herramienta A</label>
+                    <input type="text" class="form-control" id="herramientaA" name="herramientaA" [(ngModel)]="skills.herramientaA" required>
+                </div>
+                <div class="form-group">
+                    <label for="valorherrA"> Valor para la herramienta A</label>
+                    <input type="text" class="form-control" id="valorherrA" name="valorherrA" [(ngModel)]="skills.valorherrA" required>
+                </div>
+                <div class="form-group">
+                    <label for="herramientaB"> Nombre de la herramienta B</label>
+                    <input type="text" class="form-control" id="herramientaB" name="herramientaB" [(ngModel)]="skills.herramientaB" required>
+                </div>
+                <div class="form-group">
+                    <label for="valorherrB"> Valor para la herramienta B</label>
+                    <input type="text" class="form-control" id="valorherrB" name="valorherrB" [(ngModel)]="skills.valorherrB" required>
+                </div>
+                <div class="form-group">
+                    <label for="herramientaC"> Nombre de la herramienta C</label>
+                    <input type="text" class="form-control" id="herramientaC" name="herramientaC" [(ngModel)]="skills.herramientaC" required>
+                </div>
+                <div class="form-group">
+                    <label for="valorherrC"> Valor para la herramienta C</label>
+                    <input type="text" class="form-control" id="valorherrC" name="valorherrC" [(ngModel)]="skills.valorherrC" required>
+                </div>
+                <div class="form-group">
+                    <label for="herramientaD"> Nombre de la herramienta D</label>
+                    <input type="text" class="form-control" id="herramientaD" name="herramientaD" [(ngModel)]="skills.herramientaD" required>
+                </div>
+                <div class="form-group">
+                    <label for="valorherrD"> Valor para la herramienta D</label>
+                    <input type="text" class="form-control" id="valorherrD" name="valorherrD" [(ngModel)]="skills.valorherrD" required>
+                </div>
+                <div class="form-group">
+                    <label for="herramientaE"> Nombre de la herramienta E</label>
+                    <input type="text" class="form-control" id="herramientaE" name="herramientaE" [(ngModel)]="skills.herramientaE" required>
+                </div>
+                <div class="form-group">
+                    <label for="valorherrE"> Valor para la herramienta E</label>
+                    <input type="text" class="form-control" id="valorherrE" name="valorherrE" [(ngModel)]="skills.valorherrE" required>
+                </div>
+                <div class="form-group">
+                    <label for="herramientaF"> Nombre de la herramienta F</label>
+                    <input type="text" class="form-control" id="herramientaF" name="herramientaF" [(ngModel)]="skills.herramientaF" required>
+                </div>
+                <div class="form-group">
+                    <label for="valorherrF"> Valor para la herramienta F</label>
+                    <input type="text" class="form-control" id="valorherrF" name="valorherrF" [(ngModel)]="skills.valorherrF" required>
+                </div>
+
+                <button class="btn btn-success" id="botonAgregar">
+                    MODIFICAR GRAFICO
+                </button>
+                <button class="btn btn-danger" id="botonAgregar" (click)="cancelar()">
+                    CANCELAR
+                </button>
+                
+            </form>
+        </div>
+    </div>
+</div>

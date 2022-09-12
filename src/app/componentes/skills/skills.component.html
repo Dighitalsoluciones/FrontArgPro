@@ -3,14 +3,15 @@
       <div class="card mb-3" style="border-radius: 32px; background-color:navajowhite">  
         <div class="card-body">
           <a href="#" class="brillo">H & S Skills<span></span></a>
-          <div class="row graficos" *ngFor="let Skills">
+          <div class="row graficos" *ngFor="let Skills of skills">
+            <img id="grafico" src="https://quickchart.io/chart?c={type:'radar',data:{labels:['{{Skills.herramientaA}}','{{Skills.herramientaB}}','{{Skills.herramientaC}}','{{Skills.herramientaD}}','{{Skills.herramientaE}}','{{Skills.herramientaF}}'], datasets:[{label:'Herramientas',data:[{{Skills.valorherrA}},{{Skills.valorherrB}},{{Skills.valorherrC}},{{Skills.valorherrD}},{{Skills.valorherrE}},{{Skills.valorherrF}}]},]}}">
             <img id="grafico" src="https://quickchart.io/chart?c={type:'radar',data:{labels:['{{Skills.aptitudA}}','{{Skills.aptitudB}}','{{Skills.aptitudC}}','{{Skills.aptitudD}}'], datasets:[{label:'Cualidades',data:[{{Skills.valorA}},{{Skills.valorB}},{{Skills.valorC}},{{Skills.valorD}}]},]}}">
-            <img id="grafico" src="https://quickchart.io/chart?c={type:'radar',data:{labels:['Css','Html','Angular','TypeScript','Java','JavaScript'], datasets:[{label:'Herramientas',data:[100,90,90,95,90,65]},]}}"> 
+            
+            <div>
+              <button class="btn btn-outline-dark rounded float-end espaciado-botones" *ngIf="isLogged" routerLink="/editskills/{{Skills.id}}" title="Editar"><i class="far fa-edit"></i></button>
+              <button class="btn btn-outline-dark rounded float-start espaciado-botones" *ngIf="isLogged" routerLink="/editskillsb/{{Skills.id}}" title="Editar"><i class="far fa-edit"></i></button> 
+            </div>
           </div>
-            <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Eliminar"><i class="fas fa-trash-alt"></i></button>
-            <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Agregar"><i class="fas fa-plus"></i></button>
-            <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Editar"><i class="far fa-edit"></i></button>
         </div>
-      </div>
     </div> 
   </div>
