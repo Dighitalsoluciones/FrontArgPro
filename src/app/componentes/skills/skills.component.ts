@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Skills } from 'src/app/model/skills';
+import { SkillsService } from 'src/app/service/skills.service';
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-skills',
@@ -6,10 +9,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
+  skills: Skills [] = [];
 
-  constructor() { }
+  constructor(private sSkills: SkillsService, private tokenService: TokenService) { }
+  isLogged = false;
 
   ngOnInit(): void {
+    this.traerSkills();
+    if(this.tokenService.getToken()){
+      this.isLogged = true;
+    } else{
+      this.isLogged = false;
+    }
+  }
+  traerSkills(): void {
+    this.sSkills.lista().subscribe(
+      data =>{
+        this.skills = data;
+      })
   }
 
 }
