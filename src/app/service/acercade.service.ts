@@ -7,7 +7,7 @@ import { Acercade } from '../model/acercade';
   providedIn: 'root'
 })
 export class AcercadeService {
-  acercadeURL = 'http://localhost:8080/acercade/';
+  acercadeURL = 'https://argprobackend.herokuapp.com/acercade/';
 
   constructor(private httpClient: HttpClient) { }
 
