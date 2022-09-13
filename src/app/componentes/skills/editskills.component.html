@@ -1,9 +1,9 @@
-<div class="container" *ngIf="skills">
-    <div class="row">
+<div class="container fondoEdit" *ngIf="skills">
+    <div class="row" id="textosColor">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <h3> Modificar los datos del grafico de Cualidades </h3>
-                <div class="form-group">
+                <div class="form-group" id="espacial">
                     <label for="aptitudA"> Nombre de la aptitud A</label>
                     <input type="text" class="form-control" id="aptitudA" name="aptitudA" [(ngModel)]="skills.aptitudA" required>
                 </div>

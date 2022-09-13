@@ -1,8 +1,8 @@
-<div class="container" *ngIf="educacion">
-    <div class="row">
+<div class="container fondoEdit" *ngIf="educacion">
+    <div class="row" id="textosColor">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-                <div class="form-group">
+                <div class="form-group" id="espacial">
                     <label for="logo"> Link del Logo de la institucion</label>
                     <input type="text" class="form-control" id="logo" name="logo" [(ngModel)]="educacion.logo" required>
                 </div>

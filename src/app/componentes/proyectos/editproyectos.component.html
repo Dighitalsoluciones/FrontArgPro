@@ -1,8 +1,8 @@
-<div class="container" *ngIf="proyectos">
-    <div class="row">
+<div class="container fondoEdit" *ngIf="proyectos">
+    <div class="row" id="textosColor">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-                <div class="form-group">
+                <div class="form-group" id="espacial">
                     <label for="logoProyec"> Logo del proyecto</label>
                     <input type="text" class="form-control" id="logoProyec" name="logoProyec" [(ngModel)]="proyectos.logoProyec" required>
                 </div>

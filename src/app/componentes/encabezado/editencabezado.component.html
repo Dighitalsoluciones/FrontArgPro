@@ -1,9 +1,9 @@
-<div class="container" *ngIf="persona">
-    <div class="row">
+<div class="container fondoEdit" *ngIf="persona">
+    <div class="row" id="textosColor">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombre"> Modicar Nombre de Usuario</label>
+                    <label for="nombre" id="espacial"> Modicar Nombre de Usuario</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
                 </div>
                 <div class="form-group">

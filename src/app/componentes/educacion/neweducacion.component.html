@@ -1,8 +1,8 @@
-<div class="container">
-    <div class="row">
+<div class="container fondoEdit">
+    <div class="row" id="textosColor">
         <div>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
-                <div class="form-group">
+                <div class="form-group" id="espacial">
                     <label for="logo"> Logo de la institucion</label>
                     <input type="text" class="form-control" id="logo" name="logo" [(ngModel)]="logo" required>
                 </div>
