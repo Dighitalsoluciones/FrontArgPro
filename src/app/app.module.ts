@@ -26,6 +26,7 @@ import { EditproyectosComponent } from './componentes/proyectos/editproyectos.co
 import { EditencabezadoComponent } from './componentes/encabezado/editencabezado.component';
 import { EditskillsComponent } from './componentes/skills/editskills.component';
 import { EditskillsbComponent } from './componentes/skills/editskillsb.component';
+import { DragDropModule} from '@angular/cdk/drag-drop';
 
 
 
@@ -59,7 +60,9 @@ import { EditskillsbComponent } from './componentes/skills/editskillsb.component
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    DragDropModule
+
         
    ],
   providers: [
