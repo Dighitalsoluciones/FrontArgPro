@@ -28,9 +28,9 @@ export class EditEducacionComponent implements OnInit {
   onUpdate(): void{
     const id = this.activatedRoute.snapshot.params['id'];
     this.educacionS.update(id, this.educacion).subscribe(
-      data=> {alert("Modificado correctamente")
+      data=> {alert("✅ Modificado correctamente")
       this.router.navigate(['']);
-      }, err => {alert("Error al modificar")
+      }, err => {alert("⛔ Error al modificar ⛔")
       this.router.navigate(['']);
       }
     )

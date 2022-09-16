@@ -30,9 +30,9 @@ export class EditAcercadeComponent implements OnInit {
   onUpdate(): void{
     const id = this.activatedRoute.snapshot.params['id'];
     this.acercadeS.update(id, this.acercade).subscribe(
-      data=> {alert("Modificado correctamente")
+      data=> {alert("✅ Modificado correctamente")
       this.router.navigate(['']);
-      }, err => {alert("Error al modificar")
+      }, err => {alert("⛔ Error al modificar ⛔")
       this.router.navigate(['']);
       }
     )
