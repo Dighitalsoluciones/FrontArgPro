@@ -27,9 +27,9 @@ export class EditskillsbComponent implements OnInit {
   onUpdate(): void{
     const id = this.activatedRoute.snapshot.params['id'];
     this.skillsS.update(id, this.skills).subscribe(
-      data=> {alert("Modificado correctamente")
+      data=> {alert("✅ Modificado correctamente")
       this.router.navigate(['']);
-      }, err => {alert("Error al modificar")
+      }, err => {alert("⛔ Error al modificar ⛔")
       this.router.navigate(['']);
       }
     )
