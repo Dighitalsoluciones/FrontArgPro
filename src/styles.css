@@ -1,8 +1,9 @@
 #ref-yo-programo{
     color: red;
-    font-size: 25px;
+    font-size: 15px;
     font-family: Impact;
-    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .card-format{
