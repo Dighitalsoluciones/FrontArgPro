@@ -1,6 +1,6 @@
 #ref-yo-programo{
     color: red;
-    font-size: 15px;
+    font-size: 25px;
     font-family: Impact;
     display: flex;
     justify-content: center;
@@ -144,7 +144,8 @@ footer p{
 /*--- Vista Dispositivos moviles ---*/
 @media (max-width: 575px){
     #ref-yo-programo{
-        align-items: flex-end;
+        display: flex;
+        justify-content: center;
     }
     #fotoperfil{
         border-radius: 50%;  
